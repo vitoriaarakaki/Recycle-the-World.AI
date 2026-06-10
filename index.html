@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recycle the World AI — Monitoramento Global de Resíduos</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Ocean Background -->
+<div class="ocean-bg">
+  <div class="particles" id="particles"></div>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <a class="nav-logo" href="#">
+    <div class="logo-icon">♻️</div>
+    <div class="logo-text">
+      Recycle the World
+      <span>AI Platform</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#platform">Plataforma</a></li>
+    <li><a href="#numbers">Dados</a></li>
+    <li><a href="#benefits">Impacto</a></li>
+    <li><a href="#impact">Resultados</a></li>
+    <li><a href="#donate" class="nav-donate-btn">Doe Agora</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <div class="hero-badge">🛰️ Monitoramento via Satélite · IA · Tempo Real</div>
+  <h1>O mundo está<br><em>afogado em lixo.</em><br>Vamos mudar isso.</h1>
+  <p class="hero-sub">Usamos inteligência artificial, imagens de satélite e dados cidadãos para mapear, monitorar e combater a crise global de resíduos — nas cidades e nos oceanos.</p>
+  <div class="hero-ctas">
+    <a href="#platform" class="btn-primary">Explorar Plataforma</a>
+    <a href="#donate" class="btn-outline">Faça sua Doação</a>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- Stats Ticker -->
+<div id="stats-ticker">
+  <div class="ticker-inner" id="ticker">
+    <div class="ticker-item"><span class="ticker-dot"></span> Lixo global produzido: <strong>2,2 bilhões ton/ano</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Plástico nos oceanos: <strong>150 milhões ton</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Lixo coletado em cidades: <strong>~55% do total</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Resíduos marinhos retirados em 2023: <strong>210.000 ton</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Famílias beneficiadas com móveis: <strong>128.400+</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Espécies marinhas afetadas: <strong>800+</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Móveis sustentáveis fabricados: <strong>3,4 milhões</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Áreas de risco alto mapeadas: <strong>14.200 regiões</strong></div>
+    <!-- Duplicado para loop infinito do ticker -->
+    <div class="ticker-item"><span class="ticker-dot"></span> Lixo global produzido: <strong>2,2 bilhões ton/ano</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Plástico nos oceanos: <strong>150 milhões ton</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Lixo coletado em cidades: <strong>~55% do total</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Resíduos marinhos retirados em 2023: <strong>210.000 ton</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Famílias beneficiadas com móveis: <strong>128.400+</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Espécies marinhas afetadas: <strong>800+</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Móveis sustentáveis fabricados: <strong>3,4 milhões</strong></div>
+    <div class="ticker-item"><span class="ticker-dot"></span> Áreas de risco alto mapeadas: <strong>14.200 regiões</strong></div>
+  </div>
+</div>
+
+<!-- Numbers -->
+<section id="numbers">
+  <div class="section-label">📊 A Escala do Problema</div>
+  <h2 class="section-title">Números que<br>não podemos ignorar</h2>
+  <p class="section-desc">Dados globais de satélites, oceanógrafos, ONGs e agências ambientais sobre a crise de resíduos no planeta.</p>
+  <div class="stats-grid">
+    <div class="stat-card danger">
+      <span class="stat-icon">🌍</span>
+      <div class="stat-number">2,2<sup>bi ton</sup></div>
+      <div class="stat-label">de lixo sólido produzido globalmente por ano — suficiente para cobrir Buenos Aires 100 vezes</div>
+    </div>
+    <div class="stat-card danger">
+      <span class="stat-icon">🌊</span>
+      <div class="stat-number">150<sup>mi ton</sup></div>
+      <div class="stat-label">de plástico acumulado nos oceanos. A cada minuto, um caminhão de lixo é despejado no mar</div>
+    </div>
+    <div class="stat-card warning">
+      <span class="stat-icon">🏙️</span>
+      <div class="stat-number">45<sup>%</sup></div>
+      <div class="stat-label">do lixo urbano global vai parar em aterros clandestinos ou é descartado irregularmente</div>
+    </div>
+    <div class="stat-card warning">
+      <span class="stat-icon">🐠</span>
+      <div class="stat-number">800<sup>+</sup></div>
+      <div class="stat-label">espécies marinhas afetadas por resíduos plásticos — 80% das tartarugas já ingeriram plástico</div>
+    </div>
+    <div class="stat-card green">
+      <span class="stat-icon">♻️</span>
+      <div class="stat-number">210<sup>k ton</sup></div>
+      <div class="stat-label">de lixo retirado dos oceanos em 2023 por projetos de limpeza marinha ao redor do mundo</div>
+    </div>
+    <div class="stat-card green">
+      <span class="stat-icon">🪑</span>
+      <div class="stat-number">3,4<sup>mi</sup></div>
+      <div class="stat-label">móveis sustentáveis fabricados com lixo reciclado e doados a famílias vulneráveis</div>
+    </div>
+    <div class="stat-card green">
+      <span class="stat-icon">🏠</span>
+      <div class="stat-number">128<sup>k fam.</sup></div>
+      <div class="stat-label">famílias em países em desenvolvimento beneficiadas com móveis feitos de materiais reciclados desde 2018</div>
+    </div>
+    <div class="stat-card warning">
+      <span class="stat-icon">📍</span>
+      <div class="stat-number">14,2<sup>k</sup></div>
+      <div class="stat-label">regiões classificadas como risco alto pela IA — próximas de rios, escolas ou áreas ambientais</div>
+    </div>
+  </div>
+</section>
+
+<!-- Platform -->
+<section id="platform">
+  <div class="platform-inner">
+    <div class="section-label">🛰️ Tecnologia de Ponta</div>
+    <h2 class="section-title">Como funciona a<br>Plataforma AI</h2>
+    <p class="section-desc">Combinamos múltiplas fontes de dados com inteligência artificial para criar o mapa mais completo de resíduos do planeta.</p>
+    <div class="platform-grid">
+      <div class="platform-features">
+        <div class="feature-card">
+          <span class="feature-emoji">🛰️</span>
+          <div class="feature-name">Satélites Multiespectrais</div>
+          <div class="feature-desc">Sentinel-2, Landsat e Planet Labs fornecem imagens de alta resolução para detectar padrões visuais de lixo, plástico e aterros irregulares.</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-emoji">🤖</span>
+          <div class="feature-name">IA & Computer Vision</div>
+          <div class="feature-desc">Modelos treinados detectam manchas de resíduos, lixo flutuante e descartes irregulares com 94% de precisão.</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-emoji">🗺️</span>
+          <div class="feature-name">Mapa Interativo Global</div>
+          <div class="feature-desc">Visualize áreas críticas em tempo real, filtre por risco, região, tipo de resíduo e compare dados históricos.</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-emoji">📅</span>
+          <div class="feature-name">Histórico Temporal</div>
+          <div class="feature-desc">Compare imagens de satélite ao longo do tempo e veja se uma mancha aumentou, diminuiu ou migrou para novas regiões.</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-emoji">📡</span>
+          <div class="feature-name">Dados Complementares</div>
+          <div class="feature-desc">Denúncias de cidadãos, drones, sensores IoT e dados de prefeituras enriquecem o modelo de predição da IA.</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-emoji">⚠️</span>
+          <div class="feature-name">Classificação de Risco</div>
+          <div class="feature-desc">Algoritmos consideram proximidade de rios, escolas, hospitais e áreas ambientais para definir risco BAIXO, MÉDIO ou ALTO.</div>
+        </div>
+      </div>
+      <div class="map-mockup">
+        <div class="map-header">
+          <div class="map-dots"><span></span><span></span><span></span></div>
+          <div class="map-title-bar">RECYCLE THE WORLD AI — MAPA GLOBAL v2.1</div>
+          <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--safe)">● LIVE</div>
+        </div>
+        <div class="map-content">
+          <svg class="map-svg" viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg">
+            <rect width="600" height="350" fill="#04203d" rx="4"/>
+            <g stroke="rgba(18,196,212,0.07)" stroke-width="0.5">
+              <line x1="0" y1="87" x2="600" y2="87"/>
+              <line x1="0" y1="175" x2="600" y2="175"/>
+              <line x1="0" y1="263" x2="600" y2="263"/>
+              <line x1="100" y1="0" x2="100" y2="350"/>
+              <line x1="200" y1="0" x2="200" y2="350"/>
+              <line x1="300" y1="0" x2="300" y2="350"/>
+              <line x1="400" y1="0" x2="400" y2="350"/>
+              <line x1="500" y1="0" x2="500" y2="350"/>
+            </g>
+            <path d="M 60 60 L 140 50 L 160 80 L 150 130 L 120 160 L 80 150 L 60 110 Z" fill="rgba(26,74,46,0.5)" stroke="rgba(77,217,192,0.3)" stroke-width="1"/>
+            <path d="M 100 175 L 150 165 L 165 200 L 155 260 L 120 280 L 95 240 L 90 200 Z" fill="rgba(26,74,46,0.4)" stroke="rgba(77,217,192,0.25)" stroke-width="1"/>
+            <path d="M 250 50 L 310 45 L 320 80 L 300 100 L 255 95 L 245 70 Z" fill="rgba(26,74,46,0.5)" stroke="rgba(77,217,192,0.3)" stroke-width="1"/>
+            <path d="M 255 120 L 320 110 L 340 160 L 330 240 L 280 270 L 250 220 L 240 160 Z" fill="rgba(26,74,46,0.45)" stroke="rgba(77,217,192,0.25)" stroke-width="1"/>
+            <path d="M 320 40 L 500 35 L 530 100 L 510 150 L 430 160 L 360 140 L 310 100 L 315 60 Z" fill="rgba(26,74,46,0.5)" stroke="rgba(77,217,192,0.3)" stroke-width="1"/>
+            <path d="M 440 210 L 520 200 L 540 240 L 510 275 L 450 270 L 430 245 Z" fill="rgba(26,74,46,0.4)" stroke="rgba(77,217,192,0.25)" stroke-width="1"/>
+          </svg>
+          <div class="risk-dot high" style="width:22px;height:22px;top:42%;left:10%;animation-delay:0s"></div>
+          <div class="risk-dot high" style="width:14px;height:14px;top:38%;left:7%;animation-delay:1s"></div>
+          <div class="risk-dot high" style="width:18px;height:18px;top:52%;left:73%;animation-delay:0.5s"></div>
+          <div class="risk-dot high" style="width:12px;height:12px;top:48%;left:76%;animation-delay:1.2s"></div>
+          <div class="risk-dot high" style="width:16px;height:16px;top:45%;left:64%;animation-delay:0.8s"></div>
+          <div class="risk-dot medium" style="width:14px;height:14px;top:48%;left:24%;animation-delay:0.3s"></div>
+          <div class="risk-dot medium" style="width:12px;height:12px;top:55%;left:43%;animation-delay:1.5s"></div>
+          <div class="risk-dot low" style="width:10px;height:10px;top:32%;left:46%;animation-delay:0.7s"></div>
+          <div class="risk-dot low" style="width:8px;height:8px;top:22%;left:44%;animation-delay:1.8s"></div>
+          <div class="map-legend">
+            <div class="legend-item"><div class="legend-dot" style="background:var(--danger)"></div> Risco Alto</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--warning)"></div> Risco Médio</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--safe)"></div> Risco Baixo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Questions -->
+<section id="questions">
+  <div class="section-label">💬 Pergunte à IA</div>
+  <h2 class="section-title">Respostas em tempo<br>real sobre o lixo global</h2>
+  <p class="section-desc">Nossa IA analisa dados de satélite, histórico e fontes complementares para responder perguntas críticas sobre resíduos no planeta.</p>
+  <div class="questions-grid">
+    <div class="question-card">
+      <span class="q-icon">🗺️</span>
+      <div class="q-text">"Onde há maior concentração de lixo agora?"</div>
+      <div class="q-desc">A IA identifica as 50 regiões com maior densidade de resíduos usando imagens Sentinel-2 processadas em tempo real.</div>
+    </div>
+    <div class="question-card">
+      <span class="q-icon">📈</span>
+      <div class="q-text">"Essa mancha aumentou ou diminuiu?"</div>
+      <div class="q-desc">Comparativo temporal automatizado entre imagens mensais para detectar expansão, redução ou migração de acúmulos.</div>
+    </div>
+    <div class="question-card">
+      <span class="q-icon">🏖️</span>
+      <div class="q-text">"Quais regiões costeiras têm maior risco de vazamento para o mar?"</div>
+      <div class="q-desc">Cruzamento de dados de rios, ventos e correntes oceânicas com aterros para calcular risco de contaminação marinha.</div>
+    </div>
+    <div class="question-card">
+      <span class="q-icon">🌊</span>
+      <div class="q-text">"Onde está a grande mancha de plástico do Pacífico?"</div>
+      <div class="q-desc">Rastreamento em tempo real da Great Pacific Garbage Patch com estimativa de área, densidade e composição por tipo de plástico.</div>
+    </div>
+    <div class="question-card">
+      <span class="q-icon">🏙️</span>
+      <div class="q-text">"Quais cidades melhoraram mais sua coleta?"</div>
+      <div class="q-desc">Ranking global baseado em redução de descarte irregular, melhora na cobertura de coleta e queda em índices de contaminação hídrica.</div>
+    </div>
+    <div class="question-card">
+      <span class="q-icon">⚡</span>
+      <div class="q-text">"Qual ação teria o maior impacto ambiental agora?"</div>
+      <div class="q-desc">O modelo de IA prioriza intervenções por custo-benefício ambiental, urgência e disponibilidade de recursos locais.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Risk -->
+<section id="risk">
+  <div class="risk-inner">
+    <div class="section-label">⚠️ Sistema de Alertas</div>
+    <h2 class="section-title">Classificação de<br>Risco Inteligente</h2>
+    <p class="section-desc" style="margin:0 auto;text-align:center">A IA classifica cada área considerando proximidade de rios, bairros, escolas e reservas ambientais, priorizando intervenções urgentes.</p>
+    <div class="risk-bars">
+      <div class="risk-bar-row">
+        <div class="risk-bar-label high">ALTO</div>
+        <div class="risk-bar-track"><div class="risk-bar-fill high"></div></div>
+        <div class="risk-bar-pct">72%</div>
+      </div>
+      <div class="risk-bar-row">
+        <div class="risk-bar-label medium">MÉDIO</div>
+        <div class="risk-bar-track"><div class="risk-bar-fill medium"></div></div>
+        <div class="risk-bar-pct">45%</div>
+      </div>
+      <div class="risk-bar-row">
+        <div class="risk-bar-label low">BAIXO</div>
+        <div class="risk-bar-track"><div class="risk-bar-fill low"></div></div>
+        <div class="risk-bar-pct">83%</div>
+      </div>
+    </div>
+    <div class="risk-tags">
+      <div class="risk-tag high">▲ Próximo a rio</div>
+      <div class="risk-tag high">▲ Área periurbana</div>
+      <div class="risk-tag high">▲ Descarte irregular recorrente</div>
+      <div class="risk-tag medium">● Risco de escoamento pluvial</div>
+      <div class="risk-tag medium">● Próximo a escola</div>
+      <div class="risk-tag medium">● Região costeira</div>
+      <div class="risk-tag low">✓ Cobertura de coleta ativa</div>
+      <div class="risk-tag low">✓ Área monitorada por sensor</div>
+      <div class="risk-tag low">✓ Baixa densidade de resíduos</div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits -->
+<section id="benefits">
+  <div class="benefits-inner">
+    <div class="section-label">🌿 Impacto Real</div>
+    <h2 class="section-title">Por que a limpeza<br>transforma vidas</h2>
+    <div class="benefits-split">
+      <div class="benefit-panel">
+        <div class="benefit-header ocean">
+          <span class="benefit-emoji">🌊</span>
+          <div class="benefit-title">Mares mais limpos,<br>vida marinha mais rica</div>
+          <div class="benefit-subtitle">A limpeza dos oceanos tem efeitos em cascata que beneficiam toda a cadeia da vida marinha — e humana.</div>
+        </div>
+        <div class="benefit-body">
+          <div class="benefit-item">
+            <div class="benefit-item-icon">🐢</div>
+            <div class="benefit-item-text">
+              <h4>Fauna marinha protegida</h4>
+              <p>Tartarugas, baleias, golfinhos e aves marinhas sofrem menos ingestão acidental de plástico e redes fantasma que matam silenciosamente.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item-icon">🐠</div>
+            <div class="benefit-item-text">
+              <h4>Recifes de coral se regeneram</h4>
+              <p>Mares menos poluídos permitem que recifes respirem novamente — habitats de 25% de toda a vida marinha do planeta.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item-icon">🌿</div>
+            <div class="benefit-item-text">
+              <h4>Microplásticos fora da cadeia alimentar</h4>
+              <p>Reduzindo plástico nos oceanos, evitamos que micropartículas entrem nos peixes que consumimos — protegendo nossa saúde.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item-icon">💨</div>
+            <div class="benefit-item-text">
+              <h4>Oxigênio e regulação climática</h4>
+              <p>Oceanos saudáveis produzem 50% do oxigênio da Terra e regulam o clima global absorvendo CO₂ com muito mais eficiência.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="benefit-panel city">
+        <div class="benefit-header city">
+          <span class="benefit-emoji">🏙️</span>
+          <div class="benefit-title">Cidades limpas,<br>qualidade de vida real</div>
+          <div class="benefit-subtitle">A coleta eficiente transforma completamente a saúde, segurança e economia das comunidades urbanas.</div>
+        </div>
+        <div class="benefit-body">
+          <div class="benefit-item">
+            <div class="benefit-item-icon">🏥</div>
+            <div class="benefit-item-text">
+              <h4>Saúde pública melhorada</h4>
+              <p>Menos lixo acumulado significa menos focos de dengue, leptospirose e doenças respiratórias — especialmente em comunidades vulneráveis.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item-icon">🌳</div>
+            <div class="benefit-item-text">
+              <h4>Rios e mananciais preservados</h4>
+              <p>Cidades com boa coleta evitam que resíduos cheguem a rios e represas que abastecem milhões de pessoas com água potável.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item-icon">💼</div>
+            <div class="benefit-item-text">
+              <h4>Economia circular e empregos</h4>
+              <p>Cada tonelada reciclada gera até 20x mais empregos que o aterro sanitário — catadores e cooperativas são protagonistas dessa transformação.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item-icon">😊</div>
+            <div class="benefit-item-text">
+              <h4>Bem-estar e autoestima comunitária</h4>
+              <p>Ambientes limpos reduzem violência, aumentam engajamento cívico e melhoram a saúde mental dos moradores comprovadamente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Impact -->
+<section id="impact">
+  <div class="section-label">🪑 Economia Circular</div>
+  <h2 class="section-title">Do lixo ao lar:<br>Móveis que transformam</h2>
+  <div class="impact-grid">
+    <div class="impact-stats">
+      <div class="impact-stat">
+        <div class="big-num">3,4M</div>
+        <p>móveis fabricados com plástico e metal reciclado dos oceanos e cidades</p>
+      </div>
+      <div class="impact-stat">
+        <div class="big-num green">128K</div>
+        <p>famílias em países de baixo IDH beneficiadas diretamente</p>
+      </div>
+      <div class="impact-stat">
+        <div class="big-num">47</div>
+        <p>países alcançados pelo programa de distribuição de móveis sustentáveis</p>
+      </div>
+      <div class="impact-stat">
+        <div class="big-num green">98%</div>
+        <p>dos beneficiários relatam melhora na qualidade de vida doméstica</p>
+      </div>
+    </div>
+    <div class="impact-text">
+      <div class="timeline-badge">🏆 Programa Ativo desde 2018</div>
+      <h3 class="section-title" style="font-size:clamp(24px,3vw,38px)">Transformando resíduo<br>em dignidade</h3>
+      <p style="color:var(--muted);font-size:16px;line-height:1.8;margin-bottom:20px;font-weight:300">Cada tonelada de plástico retirada do oceano ou coletada nas cidades pode se tornar cadeiras, mesas, estantes e camas para famílias que nunca tiveram acesso a mobiliário básico.</p>
+      <p style="color:var(--muted);font-size:16px;line-height:1.8;margin-bottom:24px;font-weight:300">O programa conecta cooperativas de reciclagem, marceneiros locais e comunidades vulneráveis em 47 países — criando renda, dignidade e economia circular real.</p>
+      <div class="impact-detail">
+        <div class="impact-detail-icon">🌍</div>
+        <div>
+          <h4>Maior impacto: África Subsaariana</h4>
+          <p>52.000 famílias beneficiadas em 18 países com kits completos de mobiliário doméstico reciclado.</p>
+        </div>
+      </div>
+      <div class="impact-detail">
+        <div class="impact-detail-icon">🏝️</div>
+        <div>
+          <h4>Ilhas do Pacífico: plástico oceânico virou escola</h4>
+          <p>Carteiras e cadeiras de 3 escolas em Vanuatu foram fabricadas com plástico retirado da costa local.</p>
+        </div>
+      </div>
+      <div class="impact-detail">
+        <div class="impact-detail-icon">🇧🇷</div>
+        <div>
+          <h4>Brasil: 12.400 famílias em comunidades</h4>
+          <p>Parceria com cooperativas em São Paulo, Rio e Manaus gerou 420 empregos diretos e 48.000 móveis distribuídos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Donate -->
+<section id="donate">
+  <div class="section-label">💚 Faça Parte</div>
+  <h2 class="section-title">Sua doação move<br>o mundo</h2>
+  <p class="section-desc" style="margin:0 auto;text-align:center">Cada real investido alimenta a plataforma de IA, financia operações de limpeza e leva móveis a quem mais precisa.</p>
+  <div class="donate-card">
+    <div style="margin-bottom:8px;font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);text-align:left">TOTAL ARRECADADO GLOBALMENTE</div>
+    <div style="font-family:'Playfair Display',serif;font-size:48px;font-weight:900;color:var(--seafoam);text-align:left;line-height:1">
+      R$ 84,6M
+      <span style="font-size:18px;color:var(--muted);font-family:'Space Mono',monospace;font-weight:400"> / meta R$ 134M</span>
+    </div>
+    <div class="raised-bar-wrap"><div class="raised-bar"></div></div>
+    <div class="raised-meta">
+      <span><strong>63%</strong> da meta atingida</span>
+      <span><strong>28.420</strong> doadores · <strong>142</strong> países</span>
+    </div>
+    <div style="font-size:14px;color:var(--muted);margin-bottom:20px;text-align:left;font-weight:300">Escolha um valor ou insira o seu:</div>
+    <div class="donation-amounts">
+      <button class="amount-btn" onclick="setAmount(this,'R$ 10')">R$ 10</button>
+      <button class="amount-btn active" onclick="setAmount(this,'R$ 25')">R$ 25</button>
+      <button class="amount-btn" onclick="setAmount(this,'R$ 50')">R$ 50</button>
+      <button class="amount-btn" onclick="setAmount(this,'R$ 100')">R$ 100</button>
+      <button class="amount-btn" onclick="setAmount(this,'R$ 250')">R$ 250</button>
+    </div>
+    <div class="donate-input-row">
+      <input class="donate-input" type="text" id="donation-amount" placeholder="Outro valor (R$)" value="R$ 25">
+      <button class="donate-submit" onclick="handleDonate()">Doar Agora ♻️</button>
+    </div>
+    <div style="font-size:13px;color:var(--muted);text-align:center;margin-bottom:16px;font-weight:300">
+      Com R$ 25 você financia a limpeza de 50kg de plástico oceânico · Com R$ 100 você equipa uma família com móveis básicos
+    </div>
+    <div class="trust-badges">
+      <div class="trust-badge">Pagamento Seguro SSL</div>
+      <div class="trust-badge">Recibo fiscal automático</div>
+      <div class="trust-badge">100% destinado a projetos</div>
+      <div class="trust-badge">Transparência total</div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="logo-icon" style="width:36px;height:36px;font-size:18px">♻️</div>
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700">Recycle the World AI</div>
+          <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:2px">PLATAFORMA GLOBAL</div>
+        </div>
+      </div>
+      <p>Usando tecnologia de satélites e inteligência artificial para erradicar a crise global de resíduos — nas cidades e nos oceanos.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Plataforma</h5>
+      <a href="#">Mapa Interativo</a>
+      <a href="#">Dados em Tempo Real</a>
+      <a href="#">Histórico Temporal</a>
+      <a href="#">Classificação de Risco</a>
+      <a href="#">API Aberta</a>
+    </div>
+    <div class="footer-col">
+      <h5>Iniciativas</h5>
+      <a href="#">Limpeza Oceânica</a>
+      <a href="#">Coleta Urbana</a>
+      <a href="#">Móveis Sustentáveis</a>
+      <a href="#">Denunciar Descarte</a>
+      <a href="#">Voluntários</a>
+    </div>
+    <div class="footer-col">
+      <h5>Organização</h5>
+      <a href="#">Sobre nós</a>
+      <a href="#">Transparência</a>
+      <a href="#">Relatórios</a>
+      <a href="#">Imprensa</a>
+      <a href="#">Contato</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Recycle the World AI · Todos os direitos reservados</span>
+    <span>🌍 Dados de: Sentinel-2 · Landsat · Planet Labs · UNEP · Ocean Conservancy</span>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
